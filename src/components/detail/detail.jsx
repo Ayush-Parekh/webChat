@@ -70,6 +70,7 @@ function Detail() {
                     </div>
                 </div>
                 <button className='rounded bg-red-600/50 text-white p-1 border-none cursor-pointer hover:bg-red-600/80'>Block User</button>
+                <button className='p-1 bg-blue-500/50 hover:bg-blue-500/80 rounded'>Log Out</button>
             </div>
         </div>
     )
