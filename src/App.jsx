@@ -2,7 +2,7 @@ import { useState } from 'react'
 import Chat from './components/chat/chat'
 import Detail from './components/detail/detail'
 import List from './components/list/list'
-import Login from './components/Login/login'
+import Login from './components/Login'
 function App() {
   const user = false
 
