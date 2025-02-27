@@ -1,5 +1,5 @@
 import React, { useState } from 'react'
-
+import Adduser from './adduser/Adduser'
 function Chatlist() {
     const[addMode,setAddMode]=useState(false)
     return (
@@ -101,7 +101,7 @@ function Chatlist() {
                     <p className='text-xs text-purple-200/90 font-extralight'>Hey There</p>
                 </div>
             </div >
-
+            <Adduser/>
         </div>
     )
 }

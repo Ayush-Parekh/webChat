@@ -1,10 +1,15 @@
 import React, { useState } from 'react'
+import { toast } from 'react-toastify'
 
 function Login() {
     const [avatar,setavatar]=useState({
         file:null,
         url:""
     })
+    const handleLogin=e=>{
+        e.preventDefault()
+        toast.error("404")
+    }
     const handleAvatar=e=>{
         if (e.target.files[0]) {
             
@@ -18,7 +23,7 @@ function Login() {
         <div className='w-full h-full flex items-center gap-5'>
             <div className='flex-1 items-center p-3 h-[300px] w-[50%]'>
                 <h2 className='text-center text-4xl font-bold'>Welcome Back</h2>
-                <form className='flex flex-col items-center gap-2 h-[80%] p-8'>
+                <form onClick={handleLogin} className='flex flex-col items-center gap-2 h-[80%] p-8'>
                     <input className='outline-none p-1.5 rounded w-full mt-1 bg-transparent' autoComplete='off' type="text" placeholder="Email" name="email"/>
                     <input className='outline-none p-1.5 rounded w-full mt-1 bg-transparent' autoComplete='off' type="password" placeholder="password" name="password"/>
                     <button className='w-[30%] p-1 mt-2 bg-purple-300/60 rounded-2xl'>Sign In</button>

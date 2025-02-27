@@ -2,9 +2,10 @@ import { useState } from 'react'
 import Chat from './components/chat/chat'
 import Detail from './components/detail/detail'
 import List from './components/list/list'
+import Notification from './components/notification/Notification'
 import Login from './components/Login'
 function App() {
-  const user = false
+  const user = true
 
   return (   
 
@@ -18,7 +19,9 @@ function App() {
               <Detail/>
             </>
           ):(<Login/>)
+
         }
+        <Notification/>
        
       </div>
     </div>

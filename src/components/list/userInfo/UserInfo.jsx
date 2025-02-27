@@ -2,7 +2,7 @@ import React from 'react'
 
 function UserInfo() {
     return (
-        <div className='p-[20px] flex items-center justify-between'>
+        <div className='px-[20px] pt-[20px] border-b pb-[13px] flex items-center justify-between'>
             <div className='flex items-center gap-[20px]'>
                 <img className='w-10 h-10 object-cover rounded-full' src="./avatar.png" alt="" />
                 <h2>Ayush Parekh</h2>
