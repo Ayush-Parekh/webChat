@@ -8,7 +8,7 @@ function Login() {
     })
     const handleLogin=e=>{
         e.preventDefault()
-        toast.error("404")
+        toast.warn("404")
     }
     const handleAvatar=e=>{
         if (e.target.files[0]) {
